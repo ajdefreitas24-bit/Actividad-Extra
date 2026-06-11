@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo - Tienda Premium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="light">
+  <header class="header">
+    <div class="logo">Tienda Premium</div>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="profile.html">Perfil</a>
+      <a href="admin.html" id="adminLink" style="display:none;">Admin</a>
+      <a href="checkout.html">Carrito (<span id="cartCount">0</span>)</a>
+      <button id="themeToggle">Modo Día/Noche</button>
+    </nav>
+  </header>
+
+  <main class="catalog-container">
+    <section class="filters">
+      <input type="text" id="searchInput" placeholder="Buscar producto...">
+      <select id="categoryFilter">
+        <option value="">Todas las categorías</option>
+      </select>
+      <input type="number" id="minPrice" placeholder="Precio mínimo">
+      <input type="number" id="maxPrice" placeholder="Precio máximo">
+    </section>
+
+    <section id="productsList" class="products-grid">
+      <!-- Tarjetas de productos -->
+    </section>
+  </main>
+
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/catalog.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/reviews.js"></script>
+</body>
+</html>

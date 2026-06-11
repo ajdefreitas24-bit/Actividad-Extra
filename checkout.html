@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - Tienda Premium</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="light">
+  <header class="header">
+    <div class="logo">Tienda Premium</div>
+    <nav>
+      <a href="catalog.html">Catálogo</a>
+      <a href="profile.html">Perfil</a>
+    </nav>
+  </header>
+
+  <main class="checkout-container">
+    <section class="cart-section">
+      <h2>Tu carrito</h2>
+      <div id="cartItems"></div>
+      <p>Subtotal: $<span id="cartSubtotal">0</span></p>
+      <p>Total: $<span id="cartTotal">0</span></p>
+    </section>
+
+    <section class="payment-section">
+      <h2>Datos de pago</h2>
+      <form id="paymentForm">
+        <input type="text" id="cardName" placeholder="Nombre en la tarjeta" required>
+        <input type="text" id="cardNumber" placeholder="Número de tarjeta" required>
+        <input type="text" id="cardExp" placeholder="MM/AA" required>
+        <input type="text" id="cardCvv" placeholder="CVV" required>
+        <button type="submit">Finalizar compra</button>
+      </form>
+      <p id="paymentMsg"></p>
+    </section>
+  </main>
+
+  <script src="js/cart.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

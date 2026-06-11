@@ -1,0 +1,9 @@
+{
+    "name": "Tienda Premium",
+    "short_name": "Tienda",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#121212",
+    "theme_color": "#ff6b00",
+    "icons": []
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin - Tienda Premium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="light">
+    <header class="header">
+        <div class="logo">Panel Admin</div>
+        <nav>
+            <a href="catalog.html">Catálogo</a>
+            <button id="logoutBtn">Cerrar sesión</button>
+        </nav>
+    </header>
+
+    <main class="admin-container">
+        <section class="admin-dashboard">
+            <h2>Dashboard</h2>
+            <p>Total ingresos: $<span id="totalIncome">0</span></p>
+            <h3>Top 3 productos más vendidos</h3>
+            <ul id="topProducts"></ul>
+            <p>Usuarios registrados: <span id="totalUsers">0</span></p>
+            <p>Usuarios activos: <span id="activeUsers">0</span></p>
+        </section>
+
+    <section class="admin-inventory">
+        <h2>Inventario (CRUD)</h2>
+        <form id="productForm">
+            <input type="text" id="prodName" placeholder="Nombre" required>
+            <input type="text" id="prodCategory" placeholder="Categoría" required>
+            <input type="number" id="prodPrice" placeholder="Precio" required>
+            <input type="text" id="prodImage" placeholder="URL imagen" required>
+            <button type="submit">Guardar producto</button>
+        </form>
+        <div id="inventoryList"></div>
+    </section>
+
+        <section class="admin-sales">
+        <h2>Ventas</h2>
+        <div id="salesList"></div>
+        </section>
+    </main>
+
+    <script src="js/auth.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>

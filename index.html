@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda Premium</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-theme="light">
+    <header class="header">
+        <div class="logo">Tienda Premium</div>
+        <nav>
+        <a href="catalog.html">Catálogo</a>
+        <a href="login.html">Login</a>
+        <button id="themeToggle">☀️/🌙</button>
+        </nav>
+    </header>
+
+    <!-- Banner principal -->
+    <section class="banner">
+        <div class="banner-content">
+        <h1>Compra productos increíbles con experiencia premium</h1>
+        <p>Envíos rápidos, calidad garantizada y soporte 24/7.</p>
+        <a class="btn-primary" href="catalog.html">Ver catálogo</a>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="benefits">
+        <h2>¿Por qué comprar aquí?</h2>
+        <div class="benefits-grid">
+        <div class="benefit-card">
+            <span class="icon">🚚</span>
+            <h3>Envíos rápidos</h3>
+            <p>Entregas en tiempo récord.</p>
+        </div>
+        <div class="benefit-card">
+            <span class="icon">⭐</span>
+            <h3>Productos top</h3>
+            <p>Solo los mejor valorados.</p>
+        </div>
+        <div class="benefit-card">
+            <span class="icon">🔒</span>
+            <h3>Compra segura</h3>
+            <p>Datos protegidos y pagos simulados.</p>
+        </div>
+        <div class="benefit-card">
+            <span class="icon">📱</span>
+            <h3>100% responsive</h3>
+            <p>Funciona perfecto en móvil y PC.</p>
+        </div>
+        </div>
+    </section>
+
+    <!-- Productos destacados -->
+    <section class="featured">
+        <h2>Productos destacados</h2>
+        <div id="featuredProducts" class="featured-grid">
+        <!-- Se llena dinámicamente desde api.js -->
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="testimonials">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="testimonials-grid">
+        <article>
+            <p>"La mejor experiencia de compra que he tenido."</p>
+            <span>- Ana, Cliente</span>
+        </article>
+        <article>
+            <p>"Productos de calidad y envío rápido."</p>
+            <span>- Carlos, Cliente</span>
+        </article>
+        <article>
+            <p>"Volvería a comprar sin dudarlo."</p>
+            <span>- María, Cliente</span>
+        </article>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Suscríbete al newsletter</h2>
+        <form id="newsletterForm">
+            <input type="email" id="newsletterEmail" placeholder="Tu correo electrónico" required>
+            <button type="submit">Suscribirme</button>
+        </form>
+        <p id="newsletterMsg"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="social">
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">X</a>
+    </div>
+    <div class="legal">
+        <a href="#">Política de privacidad</a>
+    </div>
+    <div class="status">
+        Estado: <span id="onlineStatus">Online</span>
+    </div>
+    </footer>
+
+    <script src="js/api.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/offline.js"></script>
+</body>
+</html>
